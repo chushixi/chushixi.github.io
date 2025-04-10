@@ -89,6 +89,7 @@
         text-align: center;
         padding: 50px;
         color: #333;
+        overflow-x: hidden;
       }
       h1 {
         font-size: 36px;
@@ -107,6 +108,7 @@
         color: #555;
       }
     </style>
+
   </head>
   <body>
     <div class="simako-exe"> 
@@ -114,20 +116,19 @@
         <h1>simako here</h1>
         <img src="simako.gif" alt="wait man" width="200">
       </section>
-      </button>
-
       <section class="page page2">
       
       </section>
        <button class="nav left" onclick="slideTo(0)">〈 遊戲・作品</button>
         <button class="nav right" onclick="slideTo(1)">自介 〉
-      </div>
+      
     <script>
   function slideTo(index) {
     const slider = document.querySelector('.simako-exe');
     slider.style.transform = `translateX(-${index * 100}vw)`;
   }
 </script>
+    </div>
   </body>
 </html>
 
