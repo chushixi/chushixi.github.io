@@ -31,7 +31,25 @@
   border-radius: 50%;   
   margin-bottom: 20px;
 }
-
+.page1 {
+  background-image: url("loop-circle.gif"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+@media screen and (min-width: 768px) {
+  .page1 {
+    background-size: cover;
+    background-position: center;
+  }
+}
+.page1 p {
+  background-color: rgba(0, 0, 0, 0.4);  /* 黑色半透明背景 */
+  padding: 10px;
+  border-radius: 8px;
+}
 .page1 p {
   font-size: 20px;
   line-height: 1.6;
