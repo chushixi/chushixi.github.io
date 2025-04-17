@@ -37,3 +37,5 @@ function goLeft() {
     }, 500);
   }
 }
+
+slideTo(currentPage);
