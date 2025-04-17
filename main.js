@@ -6,6 +6,8 @@ function slideTo(index) {
   slider.style.transform = `translateX(-${index * 100}vw)`;
 }
 
+slideTo(currentPage);
+
 function goRight() {
   currentPage += 1;
   slideTo(currentPage);
@@ -38,4 +40,3 @@ function goLeft() {
   }
 }
 
-slideTo(currentPage);
