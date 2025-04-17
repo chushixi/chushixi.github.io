@@ -2,6 +2,10 @@ let currentPage = 1;
 const slider = document.querySelector('.simako-exe');
 const totalPages = document.querySelectorAll('.page').length;
 
+function startIntro(){
+  console.log('爽')
+}
+
 function slideTo(index) {
   slider.style.transform = `translateX(-${index * 100}vw)`;
 }
