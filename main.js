@@ -3,7 +3,10 @@ const slider = document.querySelector('.simako-exe');
 const totalPages = document.querySelectorAll('.page').length;
 
 function startIntro(){
-  console.log('爽')
+  const click = document.querySelector('#clickText')
+  const simakoHere = document.querySelector('#introText')
+  click.style.display = 'none'
+  simakoHere.style.display = 'block'
 }
 
 function slideTo(index) {
