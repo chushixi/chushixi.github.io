@@ -115,6 +115,27 @@
         line-height: 1.8;
         color: #555;
       }
+
+      .avatar {
+  animation: bounceIn 1s ease;
+}
+     @keyframes bounceIn{
+0%{
+transform: scale(0.2);
+opacity: 0
+}
+25%{
+transform: scale(1.4);
+opacity: 1
+}
+50%{transform: scale(0.6);
+}
+75%{transform: scale(1.2);
+}
+100%{transform: scale(1);
+}
+}
+    
     </style>
 
   </head>
@@ -134,7 +155,7 @@
         
           <section class="page page1">
           <h1>simako here</h1>
-          <img src="simako.gif" alt="wait man" width="200">
+          <img class="avatar" src="simako.gif" alt="wait man" width="200">
           </section>
         
           <section class="page page2">
