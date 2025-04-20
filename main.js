@@ -5,7 +5,7 @@ const totalPages = document.querySelectorAll('.page').length;
 function startIntro(){
   const click = document.querySelector('#clickText')
   const simakoHere = document.querySelector('#introText')
-  document.querySelector('#simako.exe').style.display = "flex";
+  document.querySelector('#simako-exe').style.display = "flex";
   click.style.display = 'none'
   simakoHere.style.display = 'block'
 }
