@@ -6,6 +6,7 @@ function startIntro(){
   const click = document.querySelector('#clickText')
   const simakoHere = document.querySelector('#introText')
   document.querySelector('.simako-exe').style.display = "flex";
+  document.querySelector('.intro-page').style.display = 'none';
   click.style.display = 'none'
   simakoHere.style.display = 'block'
 }
