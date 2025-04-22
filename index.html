@@ -144,6 +144,10 @@ opacity: 1
 100%{transform: scale(1);
 }
 }
+      .animationLeftIntro {
+  transform: translateX(-300px);
+  transition: transform 0.5s ease;
+}
     
     </style>
 
@@ -153,7 +157,7 @@ opacity: 1
       
       <section class="intro-page page1">
         <h1 id="clickText">click me</h1>
-        <img src="simako.gif" alt="wait man" width="200" onclick="startIntro()">
+        <img id="introAvatar" src="simako.gif" alt="wait man" width="200" onclick="startIntro()">
         </section>
       
       <div class="simako-exe"> 
