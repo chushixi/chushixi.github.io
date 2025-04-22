@@ -10,6 +10,7 @@ function startIntro(){
   document.querySelectorAll('.nav').forEach(btn => btn.style.display = 'block');
   click.style.display = 'none'
   simakoHere.style.display = 'block'
+  document.querySelector('#introAvatar').classList.add('animationLeftIntro');
 }
 
 function slideTo(index) {
