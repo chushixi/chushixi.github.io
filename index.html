@@ -163,6 +163,18 @@ border: 2px solid black;
   right: 20px;
 }
 
+.nav svg.arrow-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease, stroke 0.3s ease;
+}
+
+.nav:hover svg.arrow-icon {
+  transform: scale(1.2);
+  stroke: #00ffff;
+}
+
+
 /*/*/*/*/*/*/*/*/*/*動畫區*/*/*/*/*/*/*/*/*/*/
       
       @keyframes bounceIn{
@@ -254,12 +266,12 @@ opacity: 1
         
         </div>
     <button class="nav left" onclick="goLeft()">
-      <svg width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="white" stoke-width="3" stroke-linecap="round" stroke-linejoin>
+      <svg class="arrow-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="white" stoke-width="3" stroke-linecap="round" stroke-linejoin>
         <polyline points="9 18 15 12 9 6" />
       <svg/>
         </button>
     <button class="nav right" onclick="goRight()">自介 〉
-    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="white" stoke-width="3" stroke-linecap="round" stroke-linejoin>
+    <svg class="arrow-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="white" stoke-width="3" stroke-linecap="round" stroke-linejoin>
         <polyline points="15 6 9 12 15 18" />
     </button>
     </div>
