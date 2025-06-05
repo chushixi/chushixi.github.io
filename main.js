@@ -33,9 +33,6 @@ function goRight() {
       }, 50);
     }, 500);
   }
-  if (currentPage !== 1){
-    document.querySelector('#introText').style.display = 'none';
-  }
 }
 
 function goLeft() {
@@ -51,8 +48,5 @@ function goLeft() {
         slider.style.transition = 'transform 0.5s ease';
       }, 50);
     }, 500);
-  }
-  if (currentPage !== 1){
-    document.querySelector('#introText').style.display = 'none';
   }
 }
