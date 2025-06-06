@@ -2,22 +2,21 @@ let currentPage = 1;
 const slider = document.querySelector('.simako-exe');
 const totalPages = document.querySelectorAll('.page').length;
 
+function slideTo(index) {
+  slider.style.transform = `translateX(-${index * 100}vw)`;
+}
+
 function startIntro(){
   const click = document.querySelector('#clickText')
   const simakoHere = document.querySelector('#introText')
   document.querySelector('.simako-exe').style.display = "flex";
   document.querySelector('.intro-page').style.display = 'none';
   document.querySelectorAll('.nav').forEach(btn => btn.style.display = 'block');
+  slideTo(currentPage);
   click.style.display = 'none'
   simakoHere.style.display = 'block'
   //document.querySelector('.Page1avatar').classList.add('animationLeftIntro');
 }
-
-function slideTo(index) {
-  slider.style.transform = `translateX(-${index * 100}vw)`;
-}
-
-slideTo(currentPage);
 
 function goRight() {
   currentPage += 1;
