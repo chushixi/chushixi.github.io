@@ -12,7 +12,7 @@ function startIntro(){
   document.querySelector('.simako-exe').style.display = "flex";
   document.querySelector('.intro-page').style.display = 'none';
   document.querySelectorAll('.nav').forEach(btn => btn.style.display = 'block');
-  console.log(currentPage)
+  alert(currentPage)
   slideTo(currentPage);
   click.style.display = 'none'
   simakoHere.style.display = 'block'
