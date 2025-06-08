@@ -3,6 +3,7 @@ const slider = document.querySelector('.simako-exe');
 const totalPages = document.querySelectorAll('.page').length;
 
 function slideTo(index) {
+  alert("index:"index)
   slider.style.transform = `translateX(-${index * 100}vw)`;
 }
 
