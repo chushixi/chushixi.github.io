@@ -3,7 +3,6 @@ const slider = document.querySelector('.simako-exe');
 const totalPages = document.querySelectorAll('.page').length;
 
 function slideTo(index) {
-  alert("index:"index)
   slider.style.transform = `translateX(-${index * 100}vw)`;
 }
 
@@ -13,7 +12,6 @@ function startIntro(){
   document.querySelector('.simako-exe').style.display = "flex";
   document.querySelector('.intro-page').style.display = 'none';
   document.querySelectorAll('.nav').forEach(btn => btn.style.display = 'block');
-  alert(currentPage)
   slideTo(currentPage);
   click.style.display = 'none'
   simakoHere.style.display = 'block'
